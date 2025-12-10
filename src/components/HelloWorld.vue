@@ -35,9 +35,3 @@ const count = ref(0)
   </p>
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 </template>
-
-<style scoped>
-h1, p {
-  color: #fff;
-}
-</style>

@@ -5,13 +5,13 @@ onMounted(async () => {
   await import('bubbly-bg');
   bubbly({
     blur: 0, //ぼかし
-    colorStart: '#194167', //背景グラデーション始まりの色
-    colorStop: '#112144', //背景グラデーション終わりの色
+    colorStart: '#f0f8ff', //背景グラデーション始まりの色
+    colorStop: '#f0f8ff', //背景グラデーション終わりの色
     radiusFunc:() => 2 + Math.random() * 10, //大きさ
-    angleFunc:() => -Math.PI / 2, //向き
-    velocityFunc:() => Math.random() * 0.5, //速さ
+    // angleFunc:() => -Math.PI / 2, //向き
+    velocityFunc:() => Math.random() * 0.05, //速さ
     bubbleFunc:() => `hsla(${200 + Math.random() * 50}, 100%, 65%, .1)`, //色彩(hsla)
-    bubbles:20, //個数
+    bubbles:10, //個数
     compose: 'source-over', //色ブレンド
     canvas: background //キャンバスID指定
   });
